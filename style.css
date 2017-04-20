@@ -516,7 +516,6 @@ a {
 .comment-content:before,
 .comment-content:after,
 .site-header:before,
-.site-header:after,
 .site-content:before,
 .site-content:after,
 .site-footer:before,
@@ -592,7 +591,8 @@ a {
     justify-content: space-between; }
 
   .site-branding {
-    width: 35%; }
+    width: 35%;
+    flex: 1 0 auto; }
 
   .site-navigation {
     width: 55%; } }

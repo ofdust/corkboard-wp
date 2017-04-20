@@ -51,9 +51,12 @@
 	.site-header {
 		display: flex;
 		justify-content: space-between;
+		//align-items: center;
+		//align-content: center;
 	}
 	.site-branding {
 		width: 35%;
+		flex: 1 0 auto;
 	}
 	.site-navigation {
 		width: 55%;
