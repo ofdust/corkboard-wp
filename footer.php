@@ -14,6 +14,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<?php wp_nav_menu( array('theme_location' => 'menu-2', 'menu-id' => 'Social-Media' ) ); ?>
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'corkboard' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'corkboard' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
