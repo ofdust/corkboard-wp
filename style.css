@@ -702,6 +702,41 @@ button.dropdown-toggle {
 .hentry {
   margin: 0 0 1.5em; }
 
+.entry-header {
+  font-family: "Poppins", sans-serif; }
+
+.cat-links:after {
+  content: " | ";
+  margin: 0 .5em; }
+.cat-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #002254; }
+  .cat-links a:hover, .cat-links a:focus {
+    opacity: .6; }
+
+.entry-title {
+  font-size: 2.5em; }
+  @media screen and (min-width: 900px) {
+    .entry-title {
+      font-size: 3em; } }
+  .entry-title a {
+    text-decoration: none;
+    color: black; }
+    .entry-title a:hover, .entry-title a:focus {
+      color: #002254; }
+
+.entry-meta {
+  font-size: 90%; }
+  .entry-meta a {
+    text-decoration: none; }
+    .entry-meta a:focus, .entry-meta a:hover {
+      color: black; }
+
+.comments-link:before, .edit-link:before {
+  content: " | ";
+  margin: 0 .5em; }
+
 .byline,
 .updated:not(.published) {
   display: none; }
@@ -727,6 +762,10 @@ button.dropdown-toggle {
 
 .bypostauthor {
   display: block; }
+
+.comments-title {
+  font-size: 1.5em;
+  border-bottom: 1px solid; }
 
 /*--------------------------------------------------------------
 ## Footer
