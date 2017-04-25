@@ -10,8 +10,9 @@
 	position: relative;
 	padding: 1em;
 	font-family: $font__sans;
-	color: #fff;
-	background-color: $color__skin;
+	color: #700025;
+	background-color: #fff;
+	border-bottom: 1px solid #700025;
 	
 	@media screen and (min-width: $query__small) {
 		padding: 1em 2em;
@@ -30,7 +31,7 @@
 	line-height: 1em;
 	
 	a {
-		color: white;
+		color: #700025;
 		text-decoration: none;
 		
 		&:hover,

@@ -320,7 +320,7 @@ ol {
 li > ul,
 li > ol {
   margin-bottom: 0;
-  margin-left: 1.5em; }
+  margin-left: .5em; }
 
 dt {
   font-weight: bold; }
@@ -558,8 +558,9 @@ a {
   position: relative;
   padding: 1em;
   font-family: "Poppins", sans-serif;
-  color: #fff;
-  background-color: #002254; }
+  color: #700025;
+  background-color: #fff;
+  border-bottom: 1px solid #700025; }
   @media screen and (min-width: 600px) {
     .site-header {
       padding: 1em 2em; } }
@@ -574,7 +575,7 @@ a {
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
-    color: white;
+    color: #700025;
     text-decoration: none; }
     .site-title a:hover, .site-title a:focus {
       text-decoration: underline; }
@@ -629,7 +630,7 @@ a {
     width: 100%;
     padding: .5em 1em .5em 0;
     text-decoration: none;
-    color: #fff; }
+    color: #700025; }
   .main-navigation a:hover,
   .main-navigation a:focus {
     text-decoration: underline; }
@@ -770,6 +771,9 @@ button.dropdown-toggle {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+.site-footer {
+  padding: .5em; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
