@@ -558,12 +558,11 @@ a {
   position: relative;
   padding: 1em;
   font-family: "Poppins", sans-serif;
-  color: #700025;
-  background-color: #fff;
-  border-bottom: 1px solid #700025; }
+  color: #000;
+  background-color: #fff; }
   @media screen and (min-width: 600px) {
     .site-header {
-      padding: 1em 2em; } }
+      padding: 2em 2em; } }
 
 .site-branding {
   min-height: 65px; }
@@ -571,7 +570,7 @@ a {
 .site-title {
   margin: 0;
   padding: 0;
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 900;
   line-height: 1em; }
   .site-title a {
@@ -584,7 +583,9 @@ a {
   margin: 0;
   font-size: .9em;
   font-style: italic;
-  font-weight: 100; }
+  font-weight: 100;
+  color: #000;
+  padding-top: .5em; }
 
 @media screen and (min-width: 900px) {
   .site-header {
@@ -595,7 +596,7 @@ a {
     width: 35%;
     flex: 1 0 auto; }
 
-  .site-navigation {
+  .main-navigation {
     width: 55%; } }
 .main-navigation {
   display: block;
@@ -660,6 +661,7 @@ button.dropdown-toggle {
   font-size: 80%;
   text-transform: uppercase;
   color: white;
+  background: #700025;
   border: 1px solid rgba(255, 255, 255, 0.3); }
 
 /* Toggle small menu and sub-menus on */
@@ -676,7 +678,7 @@ button.dropdown-toggle {
     padding-right: 2em;
     background: rgba(255, 255, 255, 0.1); }
   .main-navigation ul {
-    display: block;
+    display: none;
     display: flex;
     flex-wrap: wrap; }
     .main-navigation ul ul {
@@ -710,29 +712,40 @@ button.dropdown-toggle {
   content: " | ";
   margin: 0 .5em; }
 .cat-links a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #002254; }
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  color: #700025;
+  font-size: 1.1em; }
   .cat-links a:hover, .cat-links a:focus {
-    opacity: .6; }
+    text-decoration: none; }
+
+.tags-links a, .comments-link a, .edit-link a {
+  text-decoration: underline;
+  font-family: "Poppins", sans-serif;
+  color: #700025;
+  font-size: 1.1em; }
+  .tags-links a:hover, .tags-links a:focus, .comments-link a:hover, .comments-link a:focus, .edit-link a:hover, .edit-link a:focus {
+    text-decoration: none; }
 
 .entry-title {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  margin-bottom: .1em; }
   @media screen and (min-width: 900px) {
     .entry-title {
       font-size: 3em; } }
   .entry-title a {
     text-decoration: none;
-    color: black; }
+    color: #700025; }
     .entry-title a:hover, .entry-title a:focus {
-      color: #002254; }
+      text-decoration: underline; }
 
 .entry-meta {
   font-size: 90%; }
   .entry-meta a {
+    color: #700025;
     text-decoration: none; }
     .entry-meta a:focus, .entry-meta a:hover {
-      color: black; }
+      text-decoration: underline; }
 
 .comments-link:before, .edit-link:before {
   content: " | ";
@@ -768,11 +781,95 @@ button.dropdown-toggle {
   font-size: 1.5em;
   border-bottom: 1px solid; }
 
+.comment-list {
+  list-style-type: none;
+  margin: 0;
+  padding: .3em; }
+  .comment-list .comment-body {
+    padding-bottom: .2em;
+    border-bottom: 1px solid black; }
+    .comment-list .comment-body .comment-meta {
+      margin-left: 60px;
+      position: relative; }
+      .comment-list .comment-body .comment-meta .comment-author img {
+        position: absolute;
+        width: 3em;
+        margin-left: -60px; }
+      .comment-list .comment-body .comment-meta .comment-author .fn {
+        font-size: 1.1em;
+        font-family: "Poppins", sans-serif;
+        color: #700025; }
+        .comment-list .comment-body .comment-meta .comment-author .fn a {
+          color: #700025;
+          text-decoration: none; }
+          .comment-list .comment-body .comment-meta .comment-author .fn a:hover, .comment-list .comment-body .comment-meta .comment-author .fn a:focus {
+            text-decoration: underline; }
+      .comment-list .comment-body .comment-meta .comment-metadata a {
+        color: black;
+        font-family: .comment-list .comment-body .comment-meta .comment-metadata a font__serif; }
+    .comment-list .comment-body .comment-content a {
+      color: black; }
+      .comment-list .comment-body .comment-content a:hover, .comment-list .comment-body .comment-content a:focus {
+        text-decoration: none; }
+    .comment-list .comment-body .reply {
+      text-align: right;
+      margin-bottom: 1em; }
+      .comment-list .comment-body .reply a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        background: #700025; }
+        .comment-list .comment-body .reply a:hover, .comment-list .comment-body .reply a:focus {
+          opacity: .6; }
+
+.comment-respond .comment-form a {
+  color: #700025;
+  font-size: 1.1em; }
+.comment-respond .comment-form .form-submit .submit {
+  background-color: #700025;
+  color: white;
+  font-size: 1.1em; }
+  .comment-respond .comment-form .form-submit .submit:hover, .comment-respond .comment-form .form-submit .submit:focus {
+    opacity: .6; }
+
+.post-navigation .nav-links a {
+  color: #700025;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em; }
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  padding: .5em; }
+  background-color: #700025;
+  padding: .8em;
+  color: white; }
+  .site-footer .menu {
+    width: 100%;
+    margin-bottom: 1em; }
+    .site-footer .menu ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+      .site-footer .menu ul li {
+        display: inline-block; }
+  .site-footer a {
+    text-decoration: none;
+    font-family: "Lora", serif;
+    font-size: 1.3em;
+    color: white; }
+    .site-footer a:hover, .site-footer a:focus {
+      opacity: .6; }
+  .site-footer .site-info {
+    font-size: .8em;
+    opacity: .6; }
+    .site-footer .site-info a {
+      font-size: 1em; }
+    .site-footer .site-info span {
+      display: block;
+      text-align: center; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -782,6 +879,19 @@ button.dropdown-toggle {
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.widget-area a {
+  text-decoration: underline;
+  font-family: "Lora", serif;
+  font-size: 1.3em;
+  color: #700025; }
+  .widget-area a:hover, .widget-area a:focus {
+    text-decoration: none; }
+.widget-area .search-submit {
+  background-color: #700025;
+  color: white; }
+  .widget-area .search-submit:hover, .widget-area .search-submit:focus {
+    opacity: .6; }
 
 /*--------------------------------------------------------------
 # Infinite scroll

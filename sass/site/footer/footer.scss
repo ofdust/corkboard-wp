@@ -1,3 +1,39 @@
 .site-footer {
-	padding:.5em;
+	background-color: $color__interactive;
+	padding:.8em;
+	color: white;
+	.menu {
+		width: 100%;
+		margin-bottom: 1em;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		font-family: $font__serif;
+		font-size: 1.3em;
+		color: white;
+		&:hover,&:focus {
+			opacity: .6;
+		}
+	}
+	.site-info {
+		font-size: .8em;
+		opacity: .6;
+		a {
+			font-size: 1em;
+		}
+		span {
+			display: block;
+			text-align: center;
+		}
+	}
 }

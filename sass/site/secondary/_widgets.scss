@@ -6,3 +6,25 @@
 		max-width: 100%;
 	}
 }
+
+.widget-area {
+	li {
+
+	}
+	a {
+		text-decoration: underline;
+		font-family: $font__serif;
+		font-size: 1.3em;
+		color: $color__interactive;
+		&:hover,&:focus {
+			text-decoration: none;
+		}
+	}
+	.search-submit {
+		background-color: $color__interactive;
+		color: white;
+		&:hover, &:focus {
+			opacity: .6;
+		}
+	}
+}

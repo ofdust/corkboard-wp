@@ -85,6 +85,7 @@ button.dropdown-toggle {
 }
 
 .menu-toggle {
+
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -94,6 +95,7 @@ button.dropdown-toggle {
 	font-size: 80%;
 	text-transform: uppercase;
 	color: white;
+	background: $color__interactive;
 	border: 1px solid hsla(0, 0%, 100%, .3);
 }
 
@@ -109,7 +111,6 @@ button.dropdown-toggle {
 	}
 	
 	.main-navigation {
-		
 		.menu-item-has-children > a,
 		.page_item_has_children > a {
 			padding-right: 2em;
@@ -117,7 +118,7 @@ button.dropdown-toggle {
 		}
 		
 		ul {
-			display: block;
+			display: none;
 			display: flex;
 			flex-wrap: wrap;
 			
@@ -149,7 +150,6 @@ button.dropdown-toggle {
 
 @media screen and (min-width: $query__medium) {
 	.main-navigation {
-		
 		ul {
 			justify-content: flex-end;
 			padding-top: 0;
