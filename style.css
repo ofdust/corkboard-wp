@@ -771,6 +771,9 @@ button.dropdown-toggle {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  margin-top: 3em; }
+
 .comment-content a {
   word-wrap: break-word; }
 
@@ -779,7 +782,7 @@ button.dropdown-toggle {
 
 .comments-title {
   font-size: 1.5em;
-  border-bottom: 1px solid; }
+  margin-bottom: 0; }
 
 .comment-list {
   list-style-type: none;
@@ -789,6 +792,7 @@ button.dropdown-toggle {
     padding-bottom: .2em;
     border-bottom: 1px solid black; }
     .comment-list .comment-body .comment-meta {
+      padding-top: 2em;
       margin-left: 60px;
       position: relative; }
       .comment-list .comment-body .comment-meta .comment-author img {
@@ -836,6 +840,23 @@ button.dropdown-toggle {
   color: #700025;
   font-family: "Poppins", sans-serif;
   font-size: 1.1em; }
+
+.bypostauthor img {
+  border: 3px solid #700025; }
+
+.nav-links {
+  margin-top: 1em; }
+  .nav-links .nav-previous, .nav-links .nav-next {
+    background-color: #700025;
+    max-width: 45%;
+    text-align: center; }
+    .nav-links .nav-previous a, .nav-links .nav-next a {
+      color: white;
+      text-align: center;
+      font-size: 1.1em;
+      text-decoration: none; }
+      .nav-links .nav-previous a:hover, .nav-links .nav-previous a:focus, .nav-links .nav-next a:hover, .nav-links .nav-next a:focus {
+        opacity: .6; }
 
 /*--------------------------------------------------------------
 ## Footer

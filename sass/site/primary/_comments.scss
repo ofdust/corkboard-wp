@@ -1,3 +1,7 @@
+.comments-area {
+	margin-top: 3em;
+}
+
 .comment-content a {
 	word-wrap: break-word;
 }
@@ -6,7 +10,8 @@
 }
 .comments-title {
 	font-size: 1.5em;
-	border-bottom: 1px solid;
+	margin-bottom: 0;
+	//border-bottom: 1px solid;
 }
 
 .comment-list {
@@ -17,6 +22,7 @@
 		padding-bottom: .2em;
 		border-bottom: 1px solid black;
 		.comment-meta {
+			padding-top: 2em;
 			margin-left:  60px;
 			position: relative;
 			.comment-author {
@@ -68,6 +74,7 @@
 			}
 		}
 	}
+
 	
 }
 
@@ -96,6 +103,32 @@
 			color: $color__interactive;
 			font-family: $font__sans;
 			font-size: 1.1em;
+		}
+	}
+}
+
+.bypostauthor {
+	img {
+		border:3px solid $color__interactive;
+	}
+}
+
+.nav-links {
+	margin-top: 1em;
+	.nav-previous, .nav-next {
+		background-color: $color__interactive;
+		//padding: 10px;
+		max-width: 45%;
+		text-align: center;
+		a {
+			color: white;
+			text-align: center;
+			font-size: 1.1em;
+			text-decoration: none;
+
+			&:hover, &:focus {
+				opacity: .6;
+			}
 		}
 	}
 }
