@@ -26,6 +26,15 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php
+	if ( has_post_thumbnail()) { ?>
+	<figure class="featured-image full-bleed">
+		<?php 
+			the_post_thumbnail('corkboard-full-bleed');
+		?>
+	</figure>
+	<?php } ?>
+
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(
