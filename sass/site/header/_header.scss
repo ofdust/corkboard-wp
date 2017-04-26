@@ -12,6 +12,9 @@
 	font-family: $font__sans;
 	color: #000;
 	background-color: #fff;
+
+	display: flex;
+
 	//border-bottom: 1px solid #700025;
 	
 	@media screen and (min-width: $query__small) {

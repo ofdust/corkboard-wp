@@ -559,7 +559,8 @@ a {
   padding: 1em;
   font-family: "Poppins", sans-serif;
   color: #000;
-  background-color: #fff; }
+  background-color: #fff;
+  display: flex; }
   @media screen and (min-width: 600px) {
     .site-header {
       padding: 2em 2em; } }
@@ -673,29 +674,32 @@ button.dropdown-toggle {
   .menu-toggle {
     display: none; }
 
-  .main-navigation .menu-item-has-children > a,
-  .main-navigation .page_item_has_children > a {
-    padding-right: 2em;
-    background: rgba(255, 255, 255, 0.1); }
-  .main-navigation ul {
-    display: none;
-    display: flex;
-    flex-wrap: wrap; }
-    .main-navigation ul ul {
-      flex-direction: column;
-      background: rgba(255, 255, 255, 0.1);
-      margin-left: 0; }
-      .main-navigation ul ul li {
-        padding-left: 0; }
-        .main-navigation ul ul li a {
-          width: 218px;
-          background: none; }
-    .main-navigation ul li a {
-      padding: .4em 1em; } }
+  .main-navigation {
+    position: absolute;
+    right: 1em; }
+    .main-navigation .menu-item-has-children > a,
+    .main-navigation .page_item_has_children > a {
+      padding-right: 2em;
+      background: rgba(255, 255, 255, 0.1); }
+    .main-navigation ul {
+      display: none;
+      display: flex;
+      flex-wrap: wrap; }
+      .main-navigation ul ul {
+        flex-direction: flex-end;
+        margin-left: 0; }
+        .main-navigation ul ul li {
+          padding-left: 0; }
+          .main-navigation ul ul li a {
+            background: none; }
+      .main-navigation ul li a {
+        padding: .4em 1em; } }
 @media screen and (min-width: 900px) {
-  .main-navigation ul {
-    justify-content: flex-end;
-    padding-top: 0; } }
+  .main-navigation {
+    position: relative; }
+    .main-navigation ul {
+      justify-content: flex-end;
+      padding-top: 0; } }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -796,7 +800,9 @@ button.dropdown-toggle {
 ## Comments
 --------------------------------------------------------------*/
 .comments-area {
-  margin-top: 3em; }
+  margin-top: 3em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid black; }
 
 .comment-content a {
   word-wrap: break-word; }
