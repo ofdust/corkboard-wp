@@ -825,6 +825,18 @@ button.dropdown-toggle {
 
   .site-content {
     max-width: 1024; } }
+#portfolio-main .entry-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  #portfolio-main .entry-content img {
+    margin-bottom: 2em;
+    padding: .5em; }
+
+@media screen and (min-width: 900px) {
+  #portfolio-primary {
+    width: 80%;
+    max-width: 2000px; } }
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
