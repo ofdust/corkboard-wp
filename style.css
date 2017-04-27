@@ -718,7 +718,8 @@ button.dropdown-toggle {
   margin: 0 0 1.5em; }
 
 .entry-header {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-size: .9em; }
 
 .cat-links:after {
   content: " | ";
