@@ -9,7 +9,7 @@
 
 .widget-area {
 	li {
-
+		padding: .1em;
 	}
 	a {
 		text-decoration: underline;
@@ -25,6 +25,49 @@
 		color: white;
 		&:hover, &:focus {
 			opacity: .6;
+		}
+	}
+}
+
+@media screen and (min-width: $query__small) {
+	#secondary {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		a {
+			font-size: 1.2em;
+		}
+		.widget_search {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (min-width: $query__medium) {
+	.site-content {
+		display: flex;
+		justify-content: space-between;
+	}
+	#secondary {
+		margin-top:10em;
+		max-width: 25%;
+		margin-left: 20px;
+		justify-content:flex-start;
+		flex-direction:column;
+		//align-content: flex-start;
+	}
+	.widget-search {
+		width: auto;
+	}
+	.widget-title {
+		font-size: 1.1em;
+	}
+	.widget {
+		li {
+			font-size: .8em;
+			margin-left: -85px;
+			list-style-type: none;
 		}
 	}
 }

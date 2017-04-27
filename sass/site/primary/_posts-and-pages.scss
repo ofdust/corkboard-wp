@@ -89,6 +89,18 @@
 	display: inline;
 }
 
+.post {
+	//background-color: #ECECEC;
+	border-bottom: 1px solid #ECECEC;
+	padding-bottom: 2em;
+	header, div, footer {
+		
+		.entry-meta {
+			padding-left: 0px;
+		}
+	}
+}
+
 /* Single Post Featured Images */
 
 .full-bleed {
@@ -106,7 +118,11 @@
 	
 	@media screen and (min-width: $query__medium) {
 		margin-top: 1.5em;
-		margin-right: -2em;
+		//margin-right: -2em;
+		width: inherit;
+		margin-left: 0;
+		border: none;
+
 	}
 	
 	@media screen and (min-width: $size__max-width) {
@@ -116,6 +132,7 @@
 	img {
 		display: block;
 		margin: 0 auto;
+
 	}
 }
 
@@ -129,4 +146,27 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+
+@media screen and (min-width: $query__medium) {
+	.content-area {
+		width: 60%;
+		max-width: 1000px;
+	}
+	.post {
+		header, div, footer {
+			//padding: 1em 3em;
+		}
+	}
+	.entry-footer {
+		font-size: 1em;
+		a {
+			font-size: 1em;
+		}
+	}
+	.site-content {
+		max-width: 1024;
+	}
+
 }

@@ -560,7 +560,8 @@ a {
   font-family: "Poppins", sans-serif;
   color: #000;
   background-color: #fff;
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid #dfdfdf; }
   @media screen and (min-width: 600px) {
     .site-header {
       padding: 2em 2em; } }
@@ -591,7 +592,8 @@ a {
 @media screen and (min-width: 900px) {
   .site-header {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-size: 1.2em; }
 
   .site-branding {
     width: 35%;
@@ -603,7 +605,8 @@ a {
   display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  clear: left; }
+  clear: left;
+  padding-bottom: 0; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -696,10 +699,15 @@ button.dropdown-toggle {
         padding: .4em 1em; } }
 @media screen and (min-width: 900px) {
   .main-navigation {
-    position: relative; }
+    position: relative;
+    margin-top: 10px; }
     .main-navigation ul {
+      position: relative;
       justify-content: flex-end;
-      padding-top: 0; } }
+      padding-top: 0; }
+      .main-navigation ul li {
+        display: inline-block;
+        position: relative; } }
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -763,6 +771,12 @@ button.dropdown-toggle {
 .group-blog .byline {
   display: inline; }
 
+.post {
+  border-bottom: 1px solid #ECECEC;
+  padding-bottom: 2em; }
+  .post header .entry-meta, .post div .entry-meta, .post footer .entry-meta {
+    padding-left: 0px; }
+
 /* Single Post Featured Images */
 .full-bleed {
   width: 100vw;
@@ -778,7 +792,9 @@ button.dropdown-toggle {
   @media screen and (min-width: 900px) {
     .full-bleed {
       margin-top: 1.5em;
-      margin-right: -2em; } }
+      width: inherit;
+      margin-left: 0;
+      border: none; } }
   @media screen and (min-width: 1080px) {
     .full-bleed {
       margin-right: calc( ((-100vw + 1080px)/2) - 2em );
@@ -796,6 +812,18 @@ button.dropdown-toggle {
   clear: both;
   margin: 0 0 1.5em; }
 
+@media screen and (min-width: 900px) {
+  .content-area {
+    width: 60%;
+    max-width: 1000px; }
+
+  .entry-footer {
+    font-size: 1em; }
+    .entry-footer a {
+      font-size: 1em; }
+
+  .site-content {
+    max-width: 1024; } }
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
@@ -893,7 +921,7 @@ button.dropdown-toggle {
 --------------------------------------------------------------*/
 .site-footer {
   background-color: #700025;
-  padding: .8em;
+  padding: .8em 2em;
   color: white; }
   .site-footer .menu {
     width: 100%;
@@ -922,6 +950,12 @@ button.dropdown-toggle {
       display: block;
       text-align: center; }
 
+@media screen and (min-width: 900px) {
+  .site-footer .menu ul {
+    display: block;
+    text-align: center; }
+    .site-footer .menu ul li {
+      padding: 10px; } }
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -931,6 +965,8 @@ button.dropdown-toggle {
   .widget select {
     max-width: 100%; }
 
+.widget-area li {
+  padding: .1em; }
 .widget-area a {
   text-decoration: underline;
   font-family: "Lora", serif;
@@ -944,6 +980,38 @@ button.dropdown-toggle {
   .widget-area .search-submit:hover, .widget-area .search-submit:focus {
     opacity: .6; }
 
+@media screen and (min-width: 600px) {
+  #secondary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #secondary a {
+      font-size: 1.2em; }
+    #secondary .widget_search {
+      display: block;
+      width: 100%; } }
+@media screen and (min-width: 900px) {
+  .site-content {
+    display: flex;
+    justify-content: space-between; }
+
+  #secondary {
+    margin-top: 10em;
+    max-width: 25%;
+    margin-left: 20px;
+    justify-content: flex-start;
+    flex-direction: column; }
+
+  .widget-search {
+    width: auto; }
+
+  .widget-title {
+    font-size: 1.1em; }
+
+  .widget li {
+    font-size: .8em;
+    margin-left: -85px;
+    list-style-type: none; } }
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

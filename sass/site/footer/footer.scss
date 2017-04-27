@@ -1,6 +1,6 @@
 .site-footer {
 	background-color: $color__interactive;
-	padding:.8em;
+	padding:.8em 2em;
 	color: white;
 	.menu {
 		width: 100%;
@@ -34,6 +34,20 @@
 		span {
 			display: block;
 			text-align: center;
+		}
+	}
+}
+
+@media screen and (min-width: $query__medium) {
+	.site-footer {
+		.menu {
+			ul {
+				display: block;
+				text-align: center;
+				li {
+					padding: 10px;
+				}
+			}
 		}
 	}
 }
