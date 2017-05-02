@@ -231,4 +231,4 @@
 		$( window ).on( 'resize.humescores', onResizeARIA );
 	});
 
-})( jQuery );
+})//( jQuery );

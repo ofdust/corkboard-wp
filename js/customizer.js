@@ -40,3 +40,10 @@
 		} );
 	} );
 } )( jQuery );
+
+
+//fix contact image for mobile
+var mq = window.matchMedia( "(max-width: 600px)" );
+if (mq.matches) {
+	$(".about-img").removeClass("alignleft");
+}

@@ -146,7 +146,7 @@ add_action( 'widgets_init', 'corkboard_widgets_init' );
  */
 function corkboard_scripts() {
 	// google fonts
-	wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400i|Poppins&amp;subset=latin-ext');
+	wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Lora:400,400i|Poppins&amp;subset=latin-ext');
 	wp_enqueue_style( 'corkboard-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'corkboard-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
